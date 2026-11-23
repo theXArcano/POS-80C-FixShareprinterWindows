@@ -1,0 +1,9 @@
+Coloque aqui a pasta do driver do fabricante (NAO vai para o GitHub).
+
+Para a POS-80C: copie a pasta "C:\POS Printer Driver V7.17" de um PC onde o
+driver ja esta instalado (o atalho "POS Printer Driver V7.17" aponta para ela).
+
+O instalador do cliente procura, nesta ordem:
+  1. arquivos .inf em subpastas "x64"/"amd64" (instala com pnputil);
+  2. um .exe do fabricante (abre para voce concluir);
+  3. se nada funcionar, usa o driver "Generic / Text Only".

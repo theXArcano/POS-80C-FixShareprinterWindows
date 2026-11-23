@@ -1,0 +1,5 @@
+# Scripts Windows: manter CRLF exatamente como estao (inclusive no Download ZIP)
+*.ps1 -text
+*.cmd -text
+*.txt -text
+*.md  text eol=lf
