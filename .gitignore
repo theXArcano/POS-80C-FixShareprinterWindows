@@ -1,5 +1,2 @@
-# drivers de fabricante (binarios de terceiros)
-driver/*
-!driver/LEIA-ME.txt
 # logs gerados pelos instaladores
 *.log

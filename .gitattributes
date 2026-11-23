@@ -3,3 +3,4 @@
 *.cmd -text
 *.txt -text
 *.md  text eol=lf
+driver/** -text

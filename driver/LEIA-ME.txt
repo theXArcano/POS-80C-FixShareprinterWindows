@@ -1,9 +1,15 @@
-Coloque aqui a pasta do driver do fabricante (NAO vai para o GitHub).
+Driver da impressora termica POS-80C (POS Printer Driver V7.17, 64 bits).
 
-Para a POS-80C: copie a pasta "C:\POS Printer Driver V7.17" de um PC onde o
-driver ja esta instalado (o atalho "POS Printer Driver V7.17" aponta para ela).
+Conteudo:
+  POS Printer Driver V7.17\POS Printer Driver V7.17.exe   -> instalador do fabricante
+  POS Printer Driver V7.17\Windows x64\                   -> arquivos do driver (.inf/.gpd/.dll)
 
-O instalador do cliente procura, nesta ordem:
-  1. arquivos .inf em subpastas "x64"/"amd64" (instala com pnputil);
-  2. um .exe do fabricante (abre para voce concluir);
+O instalador do cliente (cliente\INSTALAR_CLIENTE.cmd) usa esta pasta
+automaticamente quando o driver nao esta instalado no PC:
+  1. tenta o .inf da pasta "Windows x64" com pnputil;
+  2. se o Windows recusar (driver sem assinatura), abre o instalador .exe
+     para voce concluir;
   3. se nada funcionar, usa o driver "Generic / Text Only".
+
+Para outra impressora, coloque aqui a pasta do driver dela (com subpasta
+x64/amd64 contendo o .inf, ou o instalador .exe do fabricante).

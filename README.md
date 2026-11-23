@@ -53,14 +53,15 @@ cliente/
   DESINSTALAR_CLIENTE.cmd    → remove as impressoras da ponte
   Instalar-Cliente.ps1
   Desinstalar-Cliente.ps1
-driver/                      → coloque aqui o driver do fabricante (não versionado)
+driver/
+  POS Printer Driver V7.17/  → driver da POS-80C (64 bits) + instalador do fabricante
 ```
 
 ## Passo a passo
 
 ### 0. Preparar o pendrive
 1. Baixe este repositório (**Code → Download ZIP**) e extraia no pendrive.
-2. Copie o driver do fabricante para `driver\`. Para a POS-80C, copie a pasta `C:\POS Printer Driver V7.17` de um PC que já tenha o driver.
+2. O driver da POS-80C já vem em `driver\POS Printer Driver V7.17`. Para outra impressora, coloque o driver dela em `driver\`.
 
 ### 1. No PC onde a impressora está ligada (servidor)
 Dê dois cliques em **`servidor\INSTALAR_SERVIDOR.cmd`** e aceite o UAC.
